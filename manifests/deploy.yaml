@@ -9,7 +9,8 @@ spec:
       app: jenkins-test
   template:
     metadata:
-      app: jenkins-test
+      labels:
+        app: jenkins-test
     spec:
       containers:
       - name: test
