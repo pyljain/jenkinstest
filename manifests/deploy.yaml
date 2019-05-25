@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: test
-        image: payaljain/jenkins-test:1
+        image: payaljain/jenkinstest:1
 ---
 apiVersion: v1
 kind: Service
