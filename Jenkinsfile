@@ -12,8 +12,8 @@ docker push payaljain/jenkinstest:${GIT_COMMIT}'''
     }
     stage('Staging') {
       steps {
-        sh 'kubectl apply -n staging -f manifests/*'
         input(message: 'Do you want to deploy to staging', ok: 'Yes')
+        sh 'kubectl apply -n staging -f manifests/*'
       }
     }
   }
